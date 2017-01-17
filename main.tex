@@ -1,6 +1,7 @@
 
-%\documentclass{beamer}
-\documentclass[handout]{beamer}
+
+%\documentclass{beamer} % animation turned ON
+\documentclass[handout]{beamer} % animation turned OFF
 
 \input{includes/preamble}
 
@@ -11,7 +12,6 @@
 \date{\today} 
 
 \section{My Talk}
-% http://tex.stackexchange.com/questions/44983/beamer-removing-headline-and-its-space-on-a-single-frame-for-plan-but-keepin
 {
 \setbeamertemplate{footline}{}
 \setbeamercolor{frametitle}{bg=slidesBgDark} {
@@ -21,7 +21,7 @@
     % OR with a fancy K starting:
     %\includegraphics[height=0.6cm]{kotlin_logo_transparent}\textbf{\Huge\textcolor{white}{otlin Talk}}
 
-    \noindent\makebox[\linewidth]{\textcolor{kotlinBgBright}{\rule{\paperwidth}{1.4pt}}} % http://tex.stackexchange.com/questions/88502/how-to-change-the-shaded-color-of-the-rule-command
+    \noindent\makebox[\linewidth]{\textcolor{kotlinBgBright}{\rule{\paperwidth}{1.4pt}}}
     \vspace{2.0pt} \\
 %    \textbf{\large{\textcolor{white}{Christoph (Leiter $\vert$ Pickl)}}} \\
     \textbf{\large{\textcolor{white}{Firstname Lastname}}} \\
