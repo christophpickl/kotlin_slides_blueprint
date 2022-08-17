@@ -92,6 +92,27 @@
 \end{withoutheadline}
 }
 
+\newenvironment{whiteframe}
+{
+    \begin{withoutheadline}
+        \begin{frame}
+%\begin{figure}[h]
+%\begin{center}
+            \center
+            }
+            {
+%\end{center}
+%\end{figure}
+        \end{frame}
+    \end{withoutheadline}
+}
+
+\newcommand{\fulltitle}[1]{
+    \begin{whiteframe}
+        \Huge{#1}
+    \end{whiteframe}
+}
+
 \newcommand\sektion[1]{
   \section{#1}
 % http://tex.stackexchange.com/questions/44983/beamer-removing-headline-and-its-space-on-a-single-frame-for-plan-but-keepin
